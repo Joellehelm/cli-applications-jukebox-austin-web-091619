@@ -41,10 +41,10 @@ def run
     exit_jukebox
     break
   when "play"
-    play
+    play(songs)
     break
   when "list"
-    list
+    list(songs)
     break
   when "help"
     help
