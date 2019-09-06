@@ -31,3 +31,24 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
+
+def run
+  puts "Please enter a command:"
+  input = gets.strip
+  
+  case input
+  when "exit"
+    break
+  when "play"
+    play
+    break
+  when "list"
+    list
+    break
+  when "help"
+    help
+    break
+  end
+
+  end
+end
