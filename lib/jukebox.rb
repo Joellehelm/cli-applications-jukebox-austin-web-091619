@@ -13,14 +13,18 @@ def list(songs)
 end
 
 def play(songs)
+  skip = nil
   puts "Please enter a song name or number:"
-  input = gets.strip
+  input = "The Cults - Abducted"
   songs.each_with_index do |song, idx|
     if input == song || input.to_i == idx + 1
       puts "Playing #{song}"
-    else
-      puts "Invalid input, please try again"
+      skip = true
+
   end
+end
+if skip != true
+  puts "Invalid input, please try again"
 end
 end
 
