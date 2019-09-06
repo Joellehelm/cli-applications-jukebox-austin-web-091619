@@ -38,6 +38,7 @@ def run
 
   case input
   when "exit"
+    exit_jukebox
     break
   when "play"
     play
